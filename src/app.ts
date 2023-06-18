@@ -1,13 +1,11 @@
-import "@babylonjs/core/Debug/debugLayer";
-import "@babylonjs/inspector";
-import "@babylonjs/loaders/glTF";
-import { Engine, Scene, UniversalCamera, Vector3, ArcRotateCamera, Color3, HemisphericLight, MeshBuilder, StandardMaterial, SceneLoader, Texture } from "@babylonjs/core";
-import { CharacterController } from "babylonjs-charactercontroller";
+import { Engine, Scene, UniversalCamera, Vector3, SceneLoader} from "babylonjs";
+import {CharacterController} from "babylonjs-charactercontroller";
+
 
 class App {
     constructor() {
         const canvas = document.createElement("canvas");
-        canvas.style.width = "80%";
+        canvas.style.width = "100%";
         canvas.style.height = "100%";
         canvas.id = "gameCanvas";
         document.body.appendChild(canvas);
