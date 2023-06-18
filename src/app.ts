@@ -29,7 +29,7 @@ class App {
 		const gravity = -9.81;
 		scene.gravity = new Vector3(0, gravity / framesPerSecond, 0);
 
-		const camera = new UniversalCamera("camera", new Vector3(0, 1.2, 0), scene);
+		const camera = new UniversalCamera("camera", new Vector3(0, 0.8, 0), scene);
 		camera.attachControl(canvas, true);
 
 		// Camera speed
@@ -53,8 +53,8 @@ class App {
 		// Enable Collisions
 		scene.collisionsEnabled = true;
 
-		ground.checkCollisions = true;
-		box.checkCollisions = true;
+//		ground.checkCollisions = true;
+//		box.checkCollisions = true;
 
 		// Camera Ellipsoid
 //		camera.ellipsoid = new Vector3(1, 3.5, 1);
