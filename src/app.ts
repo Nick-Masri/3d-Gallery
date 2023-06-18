@@ -1,7 +1,7 @@
 import "@babylonjs/core/Debug/debugLayer";
 import "@babylonjs/inspector";
 import "@babylonjs/loaders/glTF";
-import { Engine, Scene, UniversalCamera, Vector3, ArcRotateCamera, Color3, Mesh, HemisphericLight, MeshBuilder, StandardMaterial, SceneLoader, Texture } from "@babylonjs/core";
+import { Engine, Scene, UniversalCamera, Vector3, ArcRotateCamera, Color3, HemisphericLight, MeshBuilder, StandardMaterial, SceneLoader, Texture } from "@babylonjs/core";
 import { CharacterController } from "babylonjs-charactercontroller";
 
 class App {
@@ -31,4 +31,5 @@ class App {
 window.addEventListener("DOMContentLoaded", () => {
     new App();
 });
+
 
