@@ -37,7 +37,7 @@ class App {
 		camera.angularSensibility = 8000;
 
 		// View distance
-		// camera.minZ = 0.4;
+		camera.minZ = 0.4;
 
 		// WASD Controls
 		// Keyboard mapping
