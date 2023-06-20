@@ -10,10 +10,10 @@ import {
 	SceneLoader,
 	Matrix,
 } from "@babylonjs/core";
-import {CharacterController} from "babylonjs-charactercontroller";
 
 class App {
 	constructor() {
+		
 		const canvas = document.createElement("canvas");
 		canvas.style.width = "100%";
 		canvas.style.height = "100%";
@@ -37,7 +37,7 @@ class App {
 		camera.angularSensibility = 8000;
 
 		// View distance
-		camera.minZ = 0.4;
+		// camera.minZ = 0.4;
 
 		// WASD Controls
 		// Keyboard mapping
@@ -52,12 +52,6 @@ class App {
 
 		// Enable Collisions
 		scene.collisionsEnabled = true;
-
-//		ground.checkCollisions = true;
-//		box.checkCollisions = true;
-
-		// Camera Ellipsoid
-//		camera.ellipsoid = new Vector3(1, 3.5, 1);
 
 		// Load my model
 		SceneLoader.ImportMeshAsync("", "https://raw.githubusercontent.com/Nick-Masri/3d-gallery-file/main/", "vr_gallery_house_baked.glb").then(function (result) {
@@ -83,18 +77,6 @@ class App {
 
 		engine.runRenderLoop(() => {
 			scene.render();
-		});
-
-		// CharacterController setup
-		const characterController = new CharacterController(camera);
-		characterController.init(scene);
-
-		// Enable collisions for the character controller
-		characterController.enableCollisions(scene.meshes);
-
-		// Update the character controller in the render loop
-		scene.registerBeforeRender(() => {
-			characterController.update();
 		});
 	}
 }
