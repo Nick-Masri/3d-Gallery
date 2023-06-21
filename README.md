@@ -9,17 +9,17 @@ Steps to run:
 
 TODOs:
    1. Put in nuxt app so I can use tailwindcss
-        1. set up nuxt
-        2. set up tailwind
-        3. set up tailwind ui for nuxt
+        a. set up nuxt
+        b. set up tailwind
+        c. set up tailwind ui for nuxt
     2. make popup
     3. make enlarge button
     4. fix crosshair
-        1. make it always at middle of screen, stop lag
-        2. make cursor and crosshair linked up
+        a. make it always at middle of screen, stop lag
+        b. make cursor and crosshair linked up
     5. outline painting on hover
     6. show popup on click
     7. fix w key
-        1. makes camera go up rn when it should just stay at the same level
+        a. makes camera go up rn when it should just stay at the same level
     8. run based on object for paintings
     9. fill paintings using babylon, needs: object name and png
